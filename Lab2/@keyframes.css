@@ -1,0 +1,15 @@
+@keyframes bouncing{
+    0%{left: 0px;}
+    100%{left:1920px;}
+}
+.square{
+    
+    width: 200px;
+    height: 100px;
+   animation: bouncing 1s cubic-bezier(.1,.20,.1,1) 0s infinite alternate both;
+    background-color: green;
+    position: absolute;
+    left: 10px;
+    top: 30px
+}
+ 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+</head>
+<body>
+    <form name="task">
+        <b>Введите фамилию сотрудника:</b><br>
+        <input type="text" name="name" id="name" value=" "><br>
+        <b>Введите дату приёма на работу:</b><br>
+        <input type="text" name="date" id="date" value="" placeholder="mm/dd/yyyy" title="Формат ввода: месяц/день/год"><br>
+        <input type="button" name="count" id="count" onclick="getInfo(task)" value="Добавить пользователя" style="margin-left: 0px;">
+        <input type="button" name="get" id="get" onclick="getExp(task)" value="Рассчитать">
+        <input type="reset" name="reset" id="reset"  value="Очистить поля">
+        <table id="table_info">
+            <thead>
+                <th>Фамилия</th>
+                <th>Дата приёма</th>
+                <th>Стаж</th>
+            </thead>
+                <tbody id='table_info_body'>
+                </tbody>
+        </table>
+    </form>
+    <input type="text" name="out" id="out" style="margin-top:20px; width: 150px;">
+</body>
+</html>

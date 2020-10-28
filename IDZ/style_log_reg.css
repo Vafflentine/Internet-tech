@@ -1,0 +1,38 @@
+body {
+    background: url('img/background28.jpg');
+  }
+/* ---------- Form of log ---------- */
+#formlog {
+    text-align: center;
+    padding: 0 40 0 40;
+    width: 400px;
+    height: 350px;
+    margin: 15% 0 0 40%;
+    border: black solid 1px;
+    background-color: #a6faf6fd;
+    border-radius: 50px;
+  }
+
+  #formlog form input, #formlog input[type=text], #formlog input[type=password], #formlog input[type=submit] 
+  {
+    border-radius: 10px;
+    background: #fff;
+    font-size: 24px;
+    width: 90%;
+    height: 50px;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    cursor: pointer;
+  }
+
+  #formlog input[type=submit]
+  {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  #formlog label
+  {
+    font-size: 24px;
+  }

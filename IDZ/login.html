@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href = "style_log_reg.css">
+        <title>Login</title>
+    </head>
+
+    <body>
+    <div id = "formlog">
+        <h2>LOGIN</h2>
+    <form action="login.php" method="post">
+    <!--**** configuration_users.php - это адрес обработчика. ***** -->
+<p>
+    <label>Login:<br></label>
+    <input name="login" type="text" size="32" maxlength="32" autocomplete="off">
+</p>
+<!--**** В текстовое поле (name="login" type="text") для логина ***** -->
+<p>
+    <label>Password:<br></label>
+    <input name="password" type="password" size="32" maxlength="32" autocomplete="off">
+</p>
+<!--**** В поле для паролей (name="password" type="password") для пароля ***** --> 
+<p>
+    <input name="submit" type="submit" value="Enter">
+<!--**** Кнопка отправляет данные на страничку configuration_users.php ***** --> 
+</p></form>
+   </div>
+    </body>
+</html>
+

@@ -1,0 +1,87 @@
+body {
+  background: url('img/background28.jpg');
+}
+    /*----------- Side Panel -----------*/
+    .sidepanel
+    {
+      position: fixed;
+      display: block;
+      margin-top:-16px;
+      margin-left:-8px;
+      border-right: black solid 2px;
+      width: 300px;
+      height: 100%;
+      background-color: #a6faf6fd;
+      text-align: center;
+    }
+    .logo
+    {
+      margin-top: 20px;
+    }
+    .logo h1
+    {
+      font-family: cursive;
+      font-size: 30px;
+
+    }
+    .login
+     {
+      position: absolute;
+      appearance: none;
+      border: 0;
+      border-radius: 5px;
+      background: #6c768b;
+      color: #fff;
+      padding: 8px 16px;
+      font-size: 24px;
+      margin: 100px 0px 0px -45px;
+    }
+    .login:hover
+    {
+      width: 96px;
+      height: 50px;
+      transition-duration: 0.5s;
+      background: #4676D7;
+      color: #fff;
+    }
+    .reg
+     {
+      margin-top:150px ;
+      appearance: none;
+      border: 0;
+      border-radius: 5px;
+      background: #6c768b;
+      color: #fff;
+      padding: 8px 16px;
+      font-size: 24px;
+    }
+    .reg:hover
+    {
+      width: 165px;
+      height: 50px;
+      transition-duration: 0.5s;
+      background: #4676D7;
+      color: #fff;
+    }
+
+    /* ---------- Main content ---------- */
+    .content_main
+    {
+      width: 1620;
+      height: 200px;
+      margin-left: 295px;
+      text-align: center;
+    }
+
+    .content_main img
+    {
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+
+    .content_main b
+    {
+       font-size: 30px;
+    }
+    
+    
