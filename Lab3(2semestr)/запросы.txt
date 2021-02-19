@@ -1,0 +1,28 @@
+SELECT DISTINCT t1.name as First_Command, t2.name as Second_Command, game.score,t1.league
+FROM team as t1 
+INNER JOIN game ON  game.FID_Team1=t1.ID_Team  
+INNER JOIN team as t2 ON game.FID_Team2=t2.ID_Team
+WHERE t1.league Like "Italic League" AND t2.league Like "Italic League"
+
+
+
+
+SELECT *
+From game
+WHERE game.date_game BETWEEN "2020-08-01" AND "2020-10-01"
+
+
+
+
+
+
+SELECT DISTINCT game.ID_Game, P1.Name
+FROM game
+INNER JOIN player as P1 ON P1.FID_Team=game.FID_Team1
+WHERE P1.Name LIKE "Player 1" AND P1.FID_Team=2
+UNION
+SELECT DISTINCT game.ID_Game, P2.Name
+FROM game
+INNER JOIN player as P2 ON P2.FID_Team=game.FID_Team2
+WHERE P2.Name LIKE "Player 1" AND P2.FID_Team=2
+
