@@ -1,0 +1,24 @@
+use dbforlab
+db.createCollection("GameInfo")
+db.createCollection("TeamInfo")
+db.TeamInfo.insertOne({"_id": 1,"Team": "Barcelona", "Coach": "Novak", Players: ["Player1_1", "Player1_2","Player1_3", "Player1_4","Player1_5", "Player1_6","Player1_7", "Player1_8","Player1_9", "Player1_10","Player1_11"]})
+db.TeamInfo.insertOne({"_id": 2,"Team": "Juventus", "Coach": "Petrov", Players: ["Player2_1", "Player2_2","Player2_3", "Player2_4","Player2_5", "Player2_6","Player2_7", "Player2_8","Player2_9", "Player2_10","Player2_11"]})
+db.TeamInfo.insertOne({"_id": 3,"Team": "Real Madrid", "Coach": "Martinez", Players: ["Player3_1", "Player3_2","Player3_3", "Player3_4","Player3_5", "Player3_6","Player3_7", "Player3_8","Player3_9", "Player3_10","Player3_11"]})
+db.TeamInfo.insertOne({"_id": 4,"Team": "Bavaria", "Coach": "Oliver", Players: ["Player4_1", "Player4_2","Player4_3", "Player4_4","Player4_5", "Player4_6","Player4_7", "Player4_8","Player4_9", "Player4_10","Player4_11"]})
+db.TeamInfo.insertOne({"_id": 5,"Team": "Dortmunt", "Coach": "Hummel", Players: ["Player5_1", "Player5_2","Player5_3", "Player5_4","Player5_5", "Player5_6","Player5_7", "Player5_8","Player5_9", "Player5_10","Player5_11"]})
+
+var gameDate=new Date(2020,06,01)
+db.GameInfo.insertOne({"League": "La Liga","Date": gameDate,"Place": "Stadion1", "Team1": "Barcelona", "Team2": "Real Madrid","Winner": "Barcelona", "IdTeam1": 1, "IdTeam2": 3})
+gameDate=new Date(2020,08,09)
+db.GameInfo.insertOne({"League": "GermanLeague","Date": gameDate,"Place": "Stadion2", "Team1": "Bavaria", "Team2": "Dortmunt","Winner": "Dortmunt", "IdTeam1": 4, "IdTeam2": 5})
+gameDate=new Date(2020,10,23)
+db.GameInfo.insertOne({"League": "All Stars","Date": gameDate,"Place": "Stadion3", "Team1": "Bavaria", "Team2": "Juventus","Winner": "Juventus", "IdTeam1": 4, "IdTeam2": 2})
+gameDate=new Date(2020,11,06)
+db.GameInfo.insertOne({"League": "Spanish League","Date": gameDate,"Place": "Stadion4", "Team1": "Barcelona", "Team2": "Dortmunt","Winner": "Barcelona", "IdTeam1": 1, "IdTeam2": 5})
+gameDate=new Date(2020,08,15)
+db.GameInfo.insertOne({"League": "GermanLeague","Date": gameDate,"Place": "Stadion5", "Team1": "Juventus", "Team2": "Real Madrid","Winner": "Real Madrid", "IdTeam1": 2, "IdTeam2": 3})
+gameDate=new Date(2020,11,01)
+db.GameInfo.insertOne({"League": "La Liga","Date": gameDate,"Place": "Stadion2", "Team1": "Juventus", "Team2": "Barcelona","Winner": "Juventus", "IdTeam1": 2, "IdTeam2": 1})
+
+
+
